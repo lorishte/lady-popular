@@ -1,0 +1,16 @@
+.rounds {
+	display: flex;
+	gap: 1rem;
+	padding-left: .5rem;
+
+	.round-icon {
+		background-color: lighten($color-primary, 0);
+		width: 3.5rem;
+		height: 3.5rem;
+		border-radius: $border-radius-small;
+
+		&.active {
+			border: 1px solid lighten($color-primary, 50);
+		}
+	}
+}

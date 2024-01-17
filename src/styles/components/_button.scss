@@ -26,9 +26,11 @@
 	}
 
 	&:disabled {
-		background-color: $color-white;
-		border: 1px solid $color-grey-medium;
-		color: $color-grey-medium;
+		//background-color: $color-white;
+		//border: 1px solid $color-grey-medium;
+		//color: $color-grey-medium;
+		opacity: .45;
+		cursor: auto;
 	}
 
 	&--default {
