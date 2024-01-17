@@ -55,7 +55,7 @@ const LeftBoard = () => {
     const rounds = []
     for (let i = 1; i <= NUMBER_OF_ROUNDS; i++) {
         const isActive = i === currentRoundNumber
-        rounds.push(<div className={isActive ? 'round-icon active' : 'round-icon'}/>)
+        rounds.push(<div className={isActive ? 'round-icon active' : 'round-icon'}>{i}</div>)
     }
 
 
