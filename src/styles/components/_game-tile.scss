@@ -1,0 +1,65 @@
+.game-tile {
+	position: relative;
+	display: grid;
+	justify-items: center;
+	align-items: center;
+	width: $game-tile-width;
+	height: $game-tile-width;
+	background-color: rgba($color-primary, .85);
+	overflow: hidden;
+	border-radius: $border-radius-small;
+	//mix-blend-mode: screen;
+	transition: all $transition-main;
+	border: 1px solid transparent;
+
+	&:hover {
+		cursor: pointer;
+		border-color: rgba($color-primary, .8);
+	}
+
+	&.open {
+		//mix-blend-mode: normal;
+		background: $gradient-tiles;
+		border-color: rgba($color-primary, .8);
+
+		&:hover {
+			cursor: auto;
+		}
+	}
+
+	&__resource-image {
+		align-self: end;
+		display: grid;
+		align-items: center;
+		width: 35%;
+		max-width: 4.5rem;
+		padding: .75rem 1rem 0;
+		border-radius: $border-radius-tiny;
+	}
+
+	&__resource-quantity {
+		align-self: start;
+		color: $color-white;
+		padding: .5rem 2rem;
+		font-size: 1.4rem;
+		pointer-events: none;
+	}
+
+	&__asset-image {
+
+	}
+
+	&__asset-quantity {
+		position: absolute;
+		top: 0;
+		right: 0;
+		min-width: 40%;
+		text-align: right;
+		border-bottom-left-radius: 1rem;
+		padding: .35rem .75rem;
+		background: $color-primary;
+		font-size: 1.4rem;
+		//font-weight: 600;
+		color: lighten($color-secondary, 35);
+	}
+}

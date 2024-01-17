@@ -1,0 +1,80 @@
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+:root {
+	--animate-duration: 2s;
+}
+
+html {
+	/* This defines 1rem
+	  -- Default browser value is 16px
+	  -- 62,5% of 16px = 10px
+	*/
+	font-size: 62.5%;
+
+	@include respond(tab-land) {
+		font-size: 56.25%; //1 rem = 9px, 9/16 = 56.25%
+	}
+
+	@include respond(tab-port) {
+		font-size: 50%; //1 rem = 8px, 8/16 = 50%
+	}
+
+	@include respond(phone) {
+		font-size: 62.5%; //1 rem = 10px, 10/16 = 62.5%
+	}
+
+	@include respond(big-desktop) {
+		font-size: 75%; //1rem = 12, 12/16
+	}
+}
+
+body {
+	box-sizing: border-box;
+	background-image: url("../../assets/purple-background.png");
+}
+
+input,
+textarea {
+	outline: none;
+	font-family: 'Noah', sans-serif;
+}
+
+button {
+	background: none;
+	border: none;
+	font-family: 'Noah', sans-serif;
+	font-size: 1.6rem;
+}
+
+a {
+	color: $color-text-default;
+
+	&,
+	&:link,
+	&:visited {
+		text-decoration: none;
+	}
+}
+
+::selection {
+	background-color: $color-grey-light;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 500;
+}
+
+ul {
+	list-style-type: none;
+}

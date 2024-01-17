@@ -1,0 +1,9 @@
+.content {
+	display: grid;
+
+
+	@include respond(phone) {
+		padding: 0 2rem;
+		margin: 2rem auto 4rem;
+	}
+}

@@ -1,0 +1,25 @@
+.left-board {
+	display: grid;
+	gap: 2rem;
+	width: fit-content;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding: 4rem;
+	background-color: rgba($color-primary, .15);
+	border-radius: $border-radius-tiny;
+	box-shadow: $box-shadow;
+
+	&__game {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 1rem 1rem;
+		justify-self: center;
+	}
+
+	&__footer {
+		justify-self: center;
+		text-align: center;
+		color: $color-primary;
+	}
+}

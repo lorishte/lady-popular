@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&family=Ubuntu:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@1;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    //font-family: "Montserrat", sans-serif;
+    font-family: 'Noah', sans-serif;
+    //font-family: 'Sofia Sans', sans-serif;
+    font-weight: 400;
+    color: $color-text-default;
+    font-size: 1.7rem;
+    line-height: 1.5;
+
+    @include respond(phone) {
+        line-height: 1.4;
+    }
+}
+
+.error-text {
+    font-size: 1.4rem;
+    margin-top: .5rem;
+    padding-left: .5rem;
+    color: $color-danger;
+}
+
+
+h1 {
+    font-size: 4rem;
+    line-height: 1.4;
+
+    @include respond(phone) {
+        font-size: 3.2rem;
+        line-height: 1.2;
+    }
+}
+
+h2 {
+    font-size: 2.4rem;
+    transition: all .2s;
+
+    @include respond(phone) {
+        font-size: 2rem;
+    }
+}
+
+h3 {
+    font-size: 2rem;
+    //text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: .5rem;
+
+    @include respond(phone) {
+        font-size: 1.6rem;
+    }
+}
+
+.text-bold {
+    font-weight: 700;
+}
+
+.text-accent-bold {
+    font-weight: 500;
+    color: $color-primary;
+}

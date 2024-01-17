@@ -1,0 +1,58 @@
+// COLORS
+$color-primary: #11103d;
+$color-primary-60: rgba($color-primary, 0.6);
+$color-primary-80: rgba($color-primary, 0.8);
+
+$color-secondary: #3d38a8;
+
+$color-danger: #39e1a1;
+
+$color-white: #fff;
+$color-grey-light-bg: #F6F6F6;
+
+$color-grey-light-header: #fbfbfb;
+$color-grey-light: #E5E5EA;
+$color-grey-medium: #C7C7CC;
+$color-grey-dark: #8E8E93;
+$color-dark: #1B2437;
+$color-black: #000;
+
+$color-text-default: $color-grey-medium;
+
+$color-blue-gradient-dark: #353395;
+$color-blue-gradient-light: #171658;
+
+$gradient-background: radial-gradient(18% 28% at 24% 50%, #03238a 7%, rgba(18, 46, 161, 0) 100%),radial-gradient(18% 28% at 18% 71%, #FFFFFF59 6%, #073AFF00 100%),radial-gradient(70% 53% at 36% 76%, #73F2FFFF 0%, #073AFF00 100%),radial-gradient(42% 53% at 15% 94%, #FFFFFFFF 7%, #073AFF00 100%),radial-gradient(42% 53% at 34% 72%, #FFFFFFFF 7%, #073AFF00 100%),radial-gradient(18% 28% at 35% 87%, #FFFFFFFF 7%, #073AFF00 100%),radial-gradient(31% 43% at 7% 98%, #FFFFFFFF 24%, #073AFF00 100%),radial-gradient(21% 37% at 72% 23%, #D3FF6D9C 24%, #073AFF00 100%),radial-gradient(35% 56% at 91% 74%, #8A4FFFF5 9%, #073AFF00 100%),radial-gradient(74% 86% at 67% 38%, #6DFFAEF5 24%, #073AFF00 100%),linear-gradient(125deg, #4EB5FFFF 1%, #4C00FCFF 100%);
+$gradient-tiles: radial-gradient( $color-blue-gradient-dark 0%,  $color-blue-gradient-light 100%);
+
+
+//FIXED HEIGHTS
+$header-height: 6rem;
+$game-tile-width: 16vh;
+$asset-tile-width: 11vh;
+
+// MARGINS
+$content-margin-top: 10rem;
+
+// FONT SIZE
+$font-size-lg: 1.8rem; // 18px
+$font-size-sm: 1.6rem; // 16px
+
+//TRANSITION TIME
+$transition-main: .35s;
+$transition-fast: .2s;
+
+// BORDER_RADIUS
+$hasRoundCorners: true;
+$border-radius-tiny: .2rem;
+$border-radius-small: .5rem;
+$border-radius-big: 1rem;
+$border-radius-round: 3rem;
+
+// SHADOWS
+$box-shadow: 0px 0px 10px rgba($color-blue-gradient-dark, 0.35);
+
+// Z-INDEX
+$header-z-index: 1000;
+$footer-z-index: 1000;
+$cart-z-index: 2000;

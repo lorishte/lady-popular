@@ -1,0 +1,63 @@
+.asset-tile {
+	position: relative;
+	display: grid;
+	justify-items: center;
+	align-items: center;
+	width: $asset-tile-width;
+	height: $asset-tile-width;
+	background-color: $color-primary;
+	overflow: hidden;
+	border-radius: $border-radius-small;
+	mix-blend-mode: screen;
+	transition: all $transition-main;
+	border: 1px solid transparent;
+
+	&:hover {
+		cursor: pointer;
+		//transform: scale(.97);
+		border-color: rgba($color-grey-dark, .45);
+	}
+
+	&:hover &__price {
+		background-color: $color-black;
+	}
+
+	&.collected {
+		mix-blend-mode: normal;
+
+		&:hover {
+			transform: scale(1);
+			border-color: transparent;
+		}
+	}
+
+	&__image {
+		background: $gradient-tiles;
+	}
+
+	&__checkmark {
+		position: absolute;
+		bottom: 3px;
+		right: 3px;
+		min-width: 25%;
+		text-align: right;
+		border-radius: $border-radius-small;
+		padding: .35rem 1rem;
+		background: $color-primary;
+		color: $color-danger;
+		font-size: 1.5rem;
+	}
+
+	&__price {
+		position: absolute;
+		top: 0;
+		right: 0;
+		min-width: 45%;
+		text-align: right;
+		border-bottom-left-radius: 1rem;
+		padding: .35rem 1rem;
+		background: $color-primary;
+		transition: all $transition-main;
+		font-size: 1.4rem;
+	}
+}

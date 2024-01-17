@@ -1,0 +1,103 @@
+.btn {
+	&,
+	&:link,
+	&:visited {
+		//text-transform: uppercase;
+		padding: 1.5rem 2.5rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: $border-radius-round;
+		transition: all .2s;
+		position: relative;
+		font-size: $font-size-sm;
+		border: 1px solid transparent;
+
+
+		//Change for the <button> element
+		//border: none;
+		cursor: pointer;
+	}
+
+
+	&:active,
+	&:focus {
+		outline: none;
+	}
+
+	&:disabled {
+		background-color: $color-white;
+		border: 1px solid $color-grey-medium;
+		color: $color-grey-medium;
+	}
+
+	&--default {
+		background-color: $color-white;
+		border: 1px solid $color-grey-medium;
+
+		&:hover:enabled {
+			color: $color-white;
+			background-color: darken($color-primary, 5%);
+			border: 1px solid $color-primary;
+		}
+	}
+
+	&--primary {
+		color: $color-white;
+		background-color: $color-primary;
+
+		&:hover:enabled {
+			background-color: darken($color-primary, 5%);
+		}
+	}
+
+	&--primary-light {
+		background-color: $color-white;
+		border: 1px solid $color-primary;
+		color: $color-primary;
+
+		&:hover:enabled {
+			color: $color-white;
+			background-color: darken($color-primary, 5%);
+			border: 1px solid $color-primary;
+		}
+	}
+
+	&--secondary {
+		background-color: $color-white;
+		border: 1px solid $color-grey-medium;
+	}
+
+	&.xs {
+		padding: .5rem .8rem;
+		font-size: 1rem;
+		border-radius: $border-radius-tiny;
+	}
+
+	&.sm {
+		padding: .8rem 1.2rem;
+		font-size: 1.3rem;
+	}
+
+	&.lg {
+		padding: 2.5rem 5rem;
+	}
+
+	&__icon {
+		display: flex;
+		gap: .5rem;
+		font-size: 1.4rem;
+		margin-right: 1rem;
+		margin-left: -1rem;
+		padding: .35rem .8rem .2rem;
+		border-radius: $border-radius-small;
+		background-color: rgba($color-secondary, .2);
+		border: 1px solid rgba($color-secondary, .5);
+
+		img {
+			width: 1.2rem;
+		}
+	}
+}
+
+

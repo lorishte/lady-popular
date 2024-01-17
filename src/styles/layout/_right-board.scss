@@ -1,0 +1,24 @@
+.right-board {
+	display: grid;
+	gap: 2rem;
+	width: fit-content;
+	align-items: start;
+	align-content: start;
+	justify-content: center;
+	padding: 4rem;
+	background-color: rgba($color-primary, .15);
+	border-radius: $border-radius-tiny;
+	box-shadow: $box-shadow;
+	align-self: end;
+
+	&__assets {
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+		gap: 1rem 1rem;
+	}
+
+	&__footer {
+		display: grid;
+		justify-content: center;
+	}
+}
