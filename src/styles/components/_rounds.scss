@@ -3,6 +3,10 @@
 	gap: 1rem;
 	padding-left: .5rem;
 
+	@include respond(phone) {
+		justify-content: center;
+	}
+
 	.round-icon {
 		display: grid;
 		align-items: center;
